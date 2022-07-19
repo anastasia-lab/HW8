@@ -41,7 +41,8 @@ namespace ConsoleApp1
                 }
             }
 
-            return newListInt;
+            bool result = newListInt.Count < listValue.Count;
+            return (result) ? RemoveValueInList(newListInt) : newListInt; 
         }
 
         /// <summary>
