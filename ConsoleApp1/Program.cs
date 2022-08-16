@@ -33,6 +33,7 @@ namespace ConsoleApp1
         static List<int> RemoveValueInList(List<int> listValue)
         {
             List<int> newListInt = new List<int>();
+
             for (int i = 0; i < listValue.Count; i++)
             {
                 if (listValue[i] < 25 || listValue[i] > 50)
@@ -41,8 +42,8 @@ namespace ConsoleApp1
                 }
             }
 
-            bool result = newListInt.Count < listValue.Count;
-            return (result) ? RemoveValueInList(newListInt) : newListInt; 
+            listValue = newListInt;
+            return listValue;
         }
 
         /// <summary>
