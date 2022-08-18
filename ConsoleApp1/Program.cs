@@ -34,15 +34,14 @@ namespace ConsoleApp1
         {
             List<int> newListInt = new List<int>();
 
-            for (int i = 0; i < listValue.Count; i++)
+            for (int i = 0; i <= 0; i++)
             {
-                if (listValue[i] < 25 || listValue[i] > 50)
+                if (listValue[i] < 25 && listValue[i] > 50)
                 {
-                    newListInt.Add(listValue[i]);
+                    listValue.RemoveRange(i, i - 1);
                 }
             }
 
-            listValue = newListInt;
             return listValue;
         }
 
