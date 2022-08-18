@@ -34,17 +34,17 @@ namespace ConsoleApp1
         {
             List<int> newListInt = new List<int>();
 
-            for (int i = 0; i <= 0; i++)
+            for (int i = 99; i >= 0; i--)
             {
-                if (listValue[i] < 25 && listValue[i] > 50)
+                if (listValue[i] >= 25 && listValue[i] <= 50)
                 {
-                    listValue.RemoveRange(i, i - 1);
+                    listValue.RemoveAt(i);
                 }
             }
 
             return listValue;
         }
-
+        
         /// <summary>
         /// Метод вывода списка на экран
         /// </summary>
